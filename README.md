@@ -1,4 +1,4 @@
-# 📘 Encurtador de URL Profissional
+# 📘 Encurtador de URL
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="Java" width="100">
