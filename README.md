@@ -48,7 +48,7 @@ O **Encurtador de URL** é um serviço de backend desenvolvido em Java com Sprin
 ### Passos
 
 ```bash
-git clone https://github.com/SEU_USUARIO/encurtador-url.git
+git clone https://github.com/MateusMantovi
 cd encurtador-url
 docker-compose up --build
 ```
