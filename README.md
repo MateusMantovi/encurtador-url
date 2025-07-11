@@ -1,11 +1,17 @@
 # 📘 Encurtador de URL
 
-![Java](https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg)
-![Spring](https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg)
-![PostgreSQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg)
-![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg)
+<p align="center">
+  ![Java](https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg)
+  ![Spring](https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg)
+  ![PostgreSQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg)
+  ![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg)
+</p>
+
+<div align="center">
 
 _Um serviço de backend para transformar URLs longas em links curtos._
+
+</div>
 
 ---
 
@@ -57,14 +63,14 @@ docker-compose up --build
 
 ## 🧪 Testando a API
 
-### Criar URL Curta
+### Criar URL Curta:
 
 ```powershell
 $body = @{ originalUrl = "https://github.com/google/gemini-pro" } | ConvertTo-Json
 Invoke-RestMethod -Uri http://localhost:8080/api/v1/encurtar -Method Post -Body $body -ContentType "application/json"
 ```
 
-### Acessar URL Curta
+### Acessar URL Curta:
 
 ```text
 http://localhost:8080/{shortCode}
