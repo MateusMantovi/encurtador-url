@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  # Servi�o do Banco de Dados PostgreSQL
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: encurtador-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1234"
+      POSTGRES_DB: encurtador
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Servi�o da Aplica��o Backend Java
+  backend-app:
+    build: . # Constr�i a imagem a partir do Dockerfile na pasta atual
+    container_name: encurtador-app
+    depends_on:
+      postgres-db:
+        condition: service_healthy # S� inicia depois que o banco estiver saud�vel
+    ports:
+      - "8080:8080" # Exp�e a porta 8080 do cont�iner para a sua m�quina
+    environment:
+      # AVISO: A URL de conex�o muda aqui!
+      # Usamos o nome do servi�o 'postgres-db', e n�o 'localhost'.
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-db:5432/encurtador
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
+
+volumes:
+  postgres_data:
