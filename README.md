@@ -7,13 +7,13 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="100">
 </p>
 
-<p align="center"><em>Um serviço de backend robusto e escalável para transformar URLs longas em links curtos e elegantes.</em></p>
+<p align="center"><em>Um serviço de backend para transformar URLs longas em links curtos.</em></p>
 
 ---
 
 ## 📖 Sobre o Projeto
 
-O **Encurtador de URL Profissional** é um serviço de backend desenvolvido em Java com Spring Boot. Ele permite criar links curtos e redirecionar para URLs longas com rapidez e eficiência. Utiliza PostgreSQL para persistência de dados e Docker para facilitar a execução.
+O **Encurtador de URL** é um serviço de backend desenvolvido em Java com Spring Boot. Ele permite criar links curtos e redirecionar para URLs longas com rapidez e eficiência. Utiliza PostgreSQL para persistência de dados e Docker para facilitar a execução.
 
 ---
 
@@ -28,9 +28,9 @@ O **Encurtador de URL Profissional** é um serviço de backend desenvolvido em J
 
 | Categoria               | Tecnologias                    |
 |-------------------------|--------------------------------|
-| Linguagem & Framework   | Java 21, Spring Boot 3         |
+| Linguagem & Framework   | Java 21, Spring Boot 3.4.7         |
 | Acesso a Dados          | Spring Data JPA, Hibernate     |
-| Banco de Dados          | PostgreSQL 16                  |
+| Banco de Dados          | PostgreSQL 17                  |
 | Infraestrutura          | Docker, Docker Compose         |
 | Build Tool              | Maven                          |
 | Extras                  | Lombok                         |
@@ -92,4 +92,4 @@ Distribuído sob a Licença MIT.
 
 ## 👤 Autor
 
-- **Seu Nome Completo** – [seu@email.com]
+- **Mateus Mantovi Costa** – [mateusmantovi@gmail.com] [https://www.linkedin.com/in/mateusmantovi/]
