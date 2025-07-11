@@ -1,17 +1,13 @@
 # 📘 Encurtador de URL
 
 <p align="center">
-  ![Java](https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg)
-  ![Spring](https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg)
-  ![PostgreSQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg)
-  ![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg)
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="Java" width="100">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg" alt="Spring" width="100">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="100">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="100">
 </p>
 
-<div align="center">
-
-_Um serviço de backend para transformar URLs longas em links curtos._
-
-</div>
+<p align="center"><em>Um serviço de backend para transformar URLs longas em links curtos.</em></p>
 
 ---
 
