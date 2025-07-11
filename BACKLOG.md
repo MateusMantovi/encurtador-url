@@ -1,4 +1,4 @@
-# 🗂️ Backlog do Projeto: Encurtador de URL Profissional
+# 🗂️ Backlog do Projeto: Encurtador de URL
 
 ## Última atualização: 11 de Julho de 2025
 

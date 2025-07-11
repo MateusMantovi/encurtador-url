@@ -1,13 +1,11 @@
 # 📘 Encurtador de URL
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="Java" width="100">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg" alt="Spring" width="100">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="100">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="100">
-</p>
+![Java](https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg)
+![Spring](https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg)
+![PostgreSQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg)
+![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg)
 
-<p align="center"><em>Um serviço de backend para transformar URLs longas em links curtos.</em></p>
+_Um serviço de backend para transformar URLs longas em links curtos._
 
 ---
 
@@ -26,14 +24,14 @@ O **Encurtador de URL** é um serviço de backend desenvolvido em Java com Sprin
 
 ## 🛠️ Tecnologias
 
-| Categoria               | Tecnologias                    |
-|-------------------------|--------------------------------|
-| Linguagem & Framework   | Java 21, Spring Boot 3.4.7         |
-| Acesso a Dados          | Spring Data JPA, Hibernate     |
-| Banco de Dados          | PostgreSQL 17                  |
-| Infraestrutura          | Docker, Docker Compose         |
-| Build Tool              | Maven                          |
-| Extras                  | Lombok                         |
+| Categoria             | Tecnologias                |
+| --------------------- | -------------------------- |
+| Linguagem & Framework | Java 21, Spring Boot 3.4.7 |
+| Acesso a Dados        | Spring Data JPA, Hibernate |
+| Banco de Dados        | PostgreSQL 17              |
+| Infraestrutura        | Docker, Docker Compose     |
+| Build Tool            | Maven                      |
+| Extras                | Lombok                     |
 
 ---
 
@@ -59,14 +57,14 @@ docker-compose up --build
 
 ## 🧪 Testando a API
 
-### Criar URL Curta:
+### Criar URL Curta
 
 ```powershell
 $body = @{ originalUrl = "https://github.com/google/gemini-pro" } | ConvertTo-Json
 Invoke-RestMethod -Uri http://localhost:8080/api/v1/encurtar -Method Post -Body $body -ContentType "application/json"
 ```
 
-### Acessar URL Curta:
+### Acessar URL Curta
 
 ```text
 http://localhost:8080/{shortCode}
